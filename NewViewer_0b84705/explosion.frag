@@ -21,6 +21,7 @@ void main()
     // fragColor = frontColor * texture(explosion, vtexCoord*vec2(a,b) + vec2(0.0 + a*column,(5 - row)*b));
     // fragColor = frontColor * texture(explosion, vec2(a,b) * (vtexCoord + vec2(column,5 - row)));
     fragColor = texture(explosion, vec2(a,b) * (vtexCoord + vec2(column,5 - row)));
+    fragColor *= fragColor.a;
 
     // fragColor = frontColor * texture(explosion, vtexCoord*vec2(1/8,1/6) + vec2(row,column)*vec2(1/8,1/6));
 }

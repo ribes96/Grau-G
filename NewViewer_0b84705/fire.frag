@@ -17,8 +17,9 @@ uniform float time;
 void main()
 {
     // float slice = 0.1;
-    // float timer = 0.75;
-    int frame = int(time / slice) % 4;
+    float timer = 0.49;
+    int frame = int(timer / slice) % 4;
+    // frame = 3;
 
     // fragColor = frontColor;
     // fragColor = frontColor;// * texture(colorMap, vtexCoord);

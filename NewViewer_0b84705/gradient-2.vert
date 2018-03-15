@@ -18,22 +18,24 @@ void main()
 {
 
     vec4 nV = modelViewProjectionMatrix * vec4(vertex, 1.0);
-    vec3 cols[5] = vec3[5](
+    vec3 cols[6] = vec3[6](
         vec3(1,0,0),    // red
         vec3(1,1,0),    // yellow
         vec3(0,1,0),    // green
         vec3(0,1,1),    // cian
+        vec3(0,0,1),     // blue
         vec3(0,0,1)     // blue
+                        // repito el último para que no falle el i + 1
     );
 
-    float inc = 4*(vertex.y - boundingBoxMin.y) / (boundingBoxMax.y - boundingBoxMin.y);
+    // float inc = 4*(vertex.y - boundingBoxMin.y) / (boundingBoxMax.y - boundingBoxMin.y);
+    float pos = ((nV.y / nV.w) + 1) / 2;    // La división lo deja entre -1 y 1
+                                            // Lo queremos entre 0 y 1
+    float inc = 4*pos;
     int i = int(inc);
     float fr = fract(inc);
-    vec3 c;
-    // if (inc >= 4)
-        // c = cols[4];
-    // else
-    c = mix(cols[i],cols[i + 1],fr);
+    vec3 c = mix(cols[i],cols[i + 1],fr);
     frontColor = vec4(c,1.0);
-    gl_Position = modelViewProjectionMatrix * vec4(vertex, 1.0);
+    // gl_Position = modelViewProjectionMatrix * vec4(vertex, 1.0);
+    gl_Position = nV;
 }
