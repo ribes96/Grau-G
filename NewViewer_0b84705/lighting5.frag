@@ -43,18 +43,6 @@ void main()
     vec3 N = normalize(my_normal);
     vec3 L = normalize(fL);
     vec3 V = normalize(fV);
-    // vec3 H = normalize(V + L);
-    // vec3 R = 2*dot(N,L)*N - L;
-
-
-    // vec4 ambient = matAmbient * lightAmbient;
-    // vec4 diffuse = matDiffuse * lightDiffuse * max(0.0,dot(N,L));
-    // vec4 specular = vec4(0);
-    // if (dot(N,L) > 0)
-    //     specular = matSpecular*lightSpecular*pow(max(0.0,dot(R,V)),matShininess);
-
     fragColor = light(N,V,L);
-
-    // fragColor = ambient + diffuse + specular;
 
 }

@@ -1,4 +1,4 @@
-#version 330 core
+ #version 330 core
 
 in vec4 frontColor;
 in vec2 vtexCoord;

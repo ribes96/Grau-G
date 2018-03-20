@@ -3,43 +3,43 @@ https://raco.fib.upc.edu/avisos/veure.jsp?espai=270022&id=79797
 
 
 Setmanes 1-2
-1. Basic lighting (1)
-2. Basic lighting (2)
-3. Lighting (1)
-4. Lighting (2)
-6. Lighting (4)
-  5. Lighting(3)
-  7. Lighting (5)
-  16. 4 lights
+X-- 1. Basic lighting (1)
+X-- 2. Basic lighting (2)
+X-- 3. Lighting (1)
+X-- 4. Lighting (2)
+X-- 6. Lighting (4)
+X--   5. Lighting(3)
+X--   7. Lighting (5)
+X--   16. 4 lights
 
 Setmana 3
-9. Animate Texture
-10. Tiling
-14. Animate Verts (1)
-15. Animate Verts (2)
-12. Explosion
-   11. Magnet
-   13. Fire
+X-- 9. Animate Texture
+X-- 10. Tiling
+X-- 14. Animate Verts (1)
+X-- 15. Animate Verts (2)
+X-- 12. Explosion
+X--    11. Magnet
+X--    13. Fire
 
 
 Setmana 4
-17. Gradient Color (1)
-18. Gradient Color (2)
-19. Foldme
-21. Auto-rotate
-23. Spherize
-25. UV unfold
-    20. Oscillate
-    22. Bouncing
+X-- 17. Gradient Color (1)
+X-- 18. Gradient Color (2)
+X-- 19. Foldme
+X-- 21. Auto-rotate
+X-- 23. Spherize
+X-- 25. UV unfold
+X--     20. Oscillate
+X--     22. Bouncing
     24. Twist
 
 
 Setmana 5
-26. CRT display
+X-- 26. CRT display
 28. Calculant normal al FS
-29. Checkerboard (1)
-30. Checkerboard (2)
-31. Checkerboard (3)
+X-- 29. Checkerboard (1)
+X-- 30. Checkerboard (2)
+X-- 31. Checkerboard (3)
 32. Senyera
     27. Profile
     33. Checkerboard (4)
