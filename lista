@@ -31,24 +31,24 @@ X-- 23. Spherize
 X-- 25. UV unfold
 X--     20. Oscillate
 X--     22. Bouncing
-    24. Twist
+X--     24. Twist
 
 
 Setmana 5
 X-- 26. CRT display
-28. Calculant normal al FS
+X-- 28. Calculant normal al FS
 X-- 29. Checkerboard (1)
 X-- 30. Checkerboard (2)
 X-- 31. Checkerboard (3)
-32. Senyera
-    27. Profile
-    33. Checkerboard (4)
-    34. CircularStripes
+X-- 32. Senyera
+?--     27. Profile
+X--     33. Checkerboard (4)
+X--     34. CircularStripes
 
 Setmana 6
-35. Hinomaru
-38. Uncover
-40. Reverse Z (1)
+X-- 35. Hinomaru
+X-- 38. Uncover
+X-- 40. Reverse Z (1)
 41. Reverse Z (2)
 44. Texture splatting
     36. Hinomaru 2

@@ -9,8 +9,6 @@ out vec4 frontColor;
 out vec2 vtexCoord;
 
 uniform mat4 modelViewProjectionMatrix;
-// uniform mat3 normalMatrix;
-
 void main()
 {
     frontColor = vec4(color,1.0);

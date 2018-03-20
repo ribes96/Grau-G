@@ -14,7 +14,6 @@ void main()
 {
     // vec3 N = normalize(normalMatrix * normal);
     float phi = 0.4 * vertex.y * sin(time);
-    phi *= -1;
     mat3 rotMat = mat3(
         cos(phi), 0.0,  -sin(phi),
         0.0     , 1.0,  0.0,

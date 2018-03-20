@@ -15,5 +15,5 @@ void main()
     float value = dot(normalize(fN),normalize(fV));
     if (-epsilon < value && value < epsilon)
         fragColor = resColor;
-    else fragColor = frontColor;
+    else fragColor = frontColor * light * normalize(fN).z;
 }
