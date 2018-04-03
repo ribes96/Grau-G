@@ -7,16 +7,20 @@ layout (location = 3) in vec2 texCoord;
 
 out vec4 frontColor;
 out vec2 vtexCoord;
-// out vec4 gl_FragCoord;
+out vec4 objCoords;
+out vec3 eyeCoords;
+out vec3 Nu;
 
 uniform mat4 modelViewProjectionMatrix;
 uniform mat3 normalMatrix;
 
 void main()
 {
-    vec3 N = normalize(normalMatrix * normal);
+    Nu = normalize(normalMatrix * normal);
     // frontColor = vec4(color,1.0) * N.z;
     frontColor = vec4(color,1.0);
     vtexCoord = texCoord;
     gl_Position = modelViewProjectionMatrix * vec4(vertex, 1.0);
+    objCoords = vec4(vertex, 1.0);
+    eyeCoords = (modelViewProjectionMatrix * vec4(vertex, 1.0)).xyz;
 }

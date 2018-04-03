@@ -6,9 +6,12 @@ in vec4 gl_FragCoord;
 out vec4 fragColor;
 // out float gl_FragDepth;
 
+
+
+
 void main()
 {
     fragColor = frontColor;
-    gl_FragDepth = -gl_FragCoord.z;
-    // gl_FragDepth = -1*gl_Position.z;
+    gl_FragDepth = 1 - gl_FragCoord.z;
+    //Tiene que estar entre [0,1]
 }
