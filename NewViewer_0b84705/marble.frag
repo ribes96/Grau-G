@@ -33,8 +33,6 @@ void main()
 
 
     //Procedure
-    // fragColor = frontColor;
-
 
     float s = dot(objCoords,s_plane);
     float t = dot(objCoords, t_plane);
@@ -45,5 +43,4 @@ void main()
     else
         difCol = mix(redish, white, 2*(v - 0.5));
     fragColor = shading(normalize(Nu), eyeCoords, difCol);
-    // fragColor = difCol;
 }
